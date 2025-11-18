@@ -1,113 +1,26 @@
 /* ---- Base ---- */
 body {
-    background-color: darkblue;
-    color: #221811;
-    font-family: Tahoma, Arial, sans-serif;
-    background-image: url("../images/fadedroad50.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-  }
   
-  header {
-    color: #8C3826;
-    background-color: #D2B48C;
-    text-align: center;
-    padding: 5px 0;
-  }
-  
-  h1 {
-    line-height: 200%;
-    font-family: 'Lora', serif;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-  }
-  
-  h2 {
-    color: #8C3826;
-    font-family: 'Lora', serif;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-  }
-  
-  nav { text-align: center; font-weight: bold; }
-  nav a { text-decoration: none; }
-  
-  footer {
-    background-color: #D2B48C;
-    font-size: 0.60em;
-    font-style: italic;
-    text-align: center;
-    padding: 1em;
-    border-top: 2px solid #8C3826;
-  }
-  
-  #wrapper {
-    width: 80%;
-    max-width: 1280px;
-    min-width: 900px;
-    background-color: #FEFAEB;
-    margin: 0 auto;
-    box-shadow: 0 10px 24px rgba(0,0,0,.18);
-  }
-  
-  @font-face {
-    font-family: 'Lora';
-    src: url('../fonts/Lora-Regular.woff') format('woff');
-  }
-  
-  /* ---- Images / layout ---- */
-  #homehero {
-    height: 300px;
-    background-image: url("../images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #menumug {
-    float: right;
-    width: 400px;
-    height: 299px;
-    background-image: url("../images/mugs.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 0 1em 1em;
-  }
-  
-  main::after { content: ""; display: block; clear: both; }
-  
-  .details {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-bottom: 1.5em;
-  }
-  
-  .details img {
-    width: 100px;
-    height: 100px;
-    border: none;
-    margin: 0 10px 10px 0;
-    vertical-align: middle;
-  }
-  .details a { text-decoration: none; }
-  
-  h4 {
-    background-color: #D2B48C;
-    font-size: 1.2em;
-    padding: .5em;
-    margin-bottom: .5em;
-    color: #221811;
-  }
-  
-  img {
-    border-style: none;
-    max-width: 100%;
-    height: auto;
-  }
-  
+  background-color: #4166F5; 
+  font-family: Tahoma, Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: darkblue;
+  background-color: lightblue;
+  text-align: center;
+  padding: 5px 0;
+}
+
+h1 {
+  line-height: 200%;
+  font-family: 'Lora', serif;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: aliceblue;
+}
