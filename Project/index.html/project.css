@@ -1,4 +1,4 @@
-/* ====== BASIC THEME ====== */
+/*  BASIC THEME  */
 
 :root {
   --bg-body: #f5f5f7;
@@ -18,19 +18,26 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/*  Global   */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   background: var(--bg-body);
   color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* ====== HEADER / NAV ====== */
+/*  HEADER / NAV  */
 
 header {
   position: sticky;
@@ -89,6 +96,17 @@ nav .action.active {
   padding: 96px 24px;
 }
 
+/* Make the home hero layout full-width again but seperate compare home */
+section.main {
+  max-width: none;
+  margin: 0;
+  padding: 96px 24px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
 .home-content {
   max-width: 640px;
   text-align: center;
@@ -132,13 +150,18 @@ nav .action.active {
   box-shadow: 0 18px 40px rgba(0, 113, 227, 0.45);
 }
 
-/* ====== INNER PAGES (About / Skills / Experience) ====== */
+/* The PAGES (About / Skills / Experience)  */
+
 
 section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 80px 24px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 48px 48px 64px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px r
 }
+
 
 section h2 {
   font-size: 2rem;
@@ -172,5 +195,76 @@ ul li {
 
   section {
     padding: 64px 18px;
+  }
+}
+
+/* Better Footer layout */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centers footer items */
+  justify-content: center;
+  text-align: center;
+  padding: 24px 16px;
+  background: #f0f0f5;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 60px;         /* gives breathing room above footer */
+}
+
+footer p {
+  margin: 4px 0;            /* keeps spacing tight and clean */
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 6px;            /* spreads links evenly */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Better Contact layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form-wrapper label {
+  font-size: 0.9rem;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #d2d2d7;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Mobile: stack contact columns */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
 }
