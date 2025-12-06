@@ -37,6 +37,24 @@ a {
   text-decoration: none;
 }
 
+/* LVHA */
+a:link {
+  color: var(--accent);
+}
+
+a:visited {
+  color: #5a3ea6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+
 /*  HEADER / NAV  */
 
 header {
@@ -152,7 +170,6 @@ section.main {
 
 /* The PAGES (About / Skills / Experience)  */
 
-
 section {
   max-width: 1000px;
   margin: 40px auto;
@@ -181,6 +198,43 @@ ul {
 ul li {
   margin-bottom: 6px;
 }
+
+
+/* Gallery page */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin: 48px auto 0;
+  max-width: 900px;
+}
+
+/* full image cards */
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover super cool!*/
+.gallery-grid img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+/* Center the gallery container */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
 
 /* ====== MOBILE TWEAKS ====== */
 
